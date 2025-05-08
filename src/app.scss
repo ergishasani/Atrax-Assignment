@@ -1,0 +1,37 @@
+.App {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+
+    .photo-card {
+      background: #f8f8f8;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      text-align: center;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}

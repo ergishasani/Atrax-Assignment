@@ -1,0 +1,19 @@
+.photo-card {
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
