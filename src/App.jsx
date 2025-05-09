@@ -9,17 +9,20 @@ function App() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/photos')
         .then(res => res.json())
-        .then(data => setPhotos(data.slice(0, 100))) // Load only first 100 for performance
+        .then(data => setPhotos(data.slice(0, 10)))
         .catch(err => console.error(err));
   }, []);
+
+
 
   const filtered = photos.filter(photo =>
       photo.title.toLowerCase().includes(search.toLowerCase())
   );
 
+
   return (
       <div className="App">
-        <h1>Atrax Photo Gallery</h1>
+        <h1>Atrax Test</h1>
         <input
             type="text"
             placeholder="Search by title..."
@@ -33,6 +36,4 @@ function App() {
         </div>
       </div>
   );
-}
-
-export default App;
+}export default App;
