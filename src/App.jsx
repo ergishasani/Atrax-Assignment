@@ -25,7 +25,7 @@ function App() {
         <h1>Atrax Test</h1>
         <input
             type="text"
-            placeholder="Search by title..."
+            placeholder="Search..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
         />
