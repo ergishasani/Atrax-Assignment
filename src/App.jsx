@@ -26,6 +26,7 @@ function App() {
         <input
             type="text"
             placeholder="Search..."
+
             value={search}
             onChange={(e) => setSearch(e.target.value)}
         />
